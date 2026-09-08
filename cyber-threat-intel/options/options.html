@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Cyber Threat Intelligence — Settings</title>
+  <link rel="stylesheet" href="options.css">
+</head>
+<body>
+  <div class="options-app">
+    <header class="options-header">
+      <h1>CYBER // THREAT INTELLIGENCE</h1>
+      <p class="subtitle">Configuration Panel</p>
+    </header>
+
+    <main>
+      <section class="section">
+        <h2>DATA SOURCES</h2>
+        <div class="option-row">
+          <label><input type="checkbox" id="src-nvd" checked> NVD (NIST)</label>
+        </div>
+        <div class="option-row">
+          <label><input type="checkbox" id="src-incibe" checked> INCIBE-CERT</label>
+        </div>
+        <div class="option-row">
+          <label><input type="checkbox" id="src-tenable"> Tenable</label>
+        </div>
+        <div class="option-row">
+          <label><input type="checkbox" id="src-exploitdb" checked> Exploit-DB</label>
+        </div>
+      </section>
+
+      <section class="section tenable-section">
+        <h2>TENABLE API CONFIGURATION</h2>
+        <p class="warning">
+          ⚠ Credentials are stored locally in browser.storage.local only.
+          Never share your API keys. Keys are never transmitted except to your configured Tenable instance.
+        </p>
+        <div class="field">
+          <label for="tenable-url">API URL</label>
+          <input type="url" id="tenable-url" value="https://cloud.tenable.com" placeholder="https://cloud.tenable.com">
+        </div>
+        <div class="field">
+          <label for="tenable-access">Access Key</label>
+          <input type="password" id="tenable-access" placeholder="Your Tenable access key" autocomplete="off">
+        </div>
+        <div class="field">
+          <label for="tenable-secret">Secret Key</label>
+          <input type="password" id="tenable-secret" placeholder="Your Tenable secret key" autocomplete="off">
+        </div>
+        <p class="hint">
+          Generate keys at cloud.tenable.com → My Account → API Keys.
+          Supports Tenable Vulnerability Management (cloud.tenable.com).
+          Security Center deployments may use a different base URL.
+        </p>
+      </section>
+
+      <section class="section">
+        <h2>NVD API KEY (OPTIONAL)</h2>
+        <div class="field">
+          <label for="nvd-key">API Key</label>
+          <input type="password" id="nvd-key" placeholder="Optional — increases rate limit" autocomplete="off">
+        </div>
+        <p class="hint">Request at nvd.nist.gov/developers/request-an-api-key. Stored locally only.</p>
+      </section>
+
+      <section class="section">
+        <h2>GENERAL</h2>
+        <div class="field">
+          <label for="update-interval">Update Interval</label>
+          <select id="update-interval">
+            <option value="manual">Manual</option>
+            <option value="15m">15 minutes</option>
+            <option value="30m">30 minutes</option>
+            <option value="1h" selected>1 hour</option>
+            <option value="6h">6 hours</option>
+            <option value="12h">12 hours</option>
+            <option value="24h">24 hours</option>
+          </select>
+        </div>
+        <div class="option-row">
+          <label><input type="checkbox" id="notifications" checked> Notifications</label>
+        </div>
+        <div class="field">
+          <label for="retention">Data Retention (days)</label>
+          <input type="number" id="retention" value="30" min="7" max="365">
+        </div>
+        <div class="field">
+          <label for="log-level">Log Level</label>
+          <select id="log-level">
+            <option value="DEBUG">DEBUG</option>
+            <option value="INFO" selected>INFO</option>
+            <option value="WARN">WARN</option>
+            <option value="ERROR">ERROR</option>
+          </select>
+        </div>
+      </section>
+
+      <div class="actions">
+        <button id="btn-save" class="btn-primary">SAVE CONFIGURATION</button>
+        <button id="btn-update" class="btn-secondary">FORCE UPDATE NOW</button>
+        <span id="save-status" class="status-msg"></span>
+      </div>
+    </main>
+  </div>
+  <script type="module" src="options.js"></script>
+</body>
+</html>

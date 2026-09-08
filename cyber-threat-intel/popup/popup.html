@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=480">
+  <title>Belerofonte Intelligence</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="scanlines" aria-hidden="true"></div>
+  <div class="app">
+    <header class="header">
+      <div class="header-top">
+        <h1 class="title">BELEROFONTE// THREAT INTELLIGENCE</h1>
+        <button id="btn-refresh" class="icon-btn" title="Force update" aria-label="Force update">⟳</button>
+        <button id="btn-settings" class="icon-btn" title="Settings" aria-label="Settings">⚙</button>
+      </div>
+      <div class="status-line">
+        <span class="led led-online" id="status-led"></span>
+        <span id="status-text">SYSTEM ONLINE</span>
+      </div>
+    </header>
+
+    <div class="stats-bar" id="stats-bar"></div>
+
+    <div class="search-bar">
+      <input type="search" id="search-input" placeholder="Search CVE, product, vendor, EDB-ID..." aria-label="Global search">
+      <div id="search-results" class="search-results hidden"></div>
+    </div>
+
+    <nav class="tabs" role="tablist">
+      <button class="tab active" data-tab="overview" role="tab">OVERVIEW</button>
+      <button class="tab" data-tab="cves" role="tab">CVEs</button>
+      <button class="tab" data-tab="zerodays" role="tab">ZERO-DAYS</button>
+      <button class="tab" data-tab="exploits" role="tab">EXPLOITS</button>
+      <button class="tab" data-tab="advisories" role="tab">ADVISORIES</button>
+      <button class="tab" data-tab="news" role="tab">NEWS</button>
+      <button class="tab" data-tab="sources" role="tab">SOURCES</button>
+    </nav>
+
+    <main class="content">
+      <div id="panel-overview" class="panel active" role="tabpanel"></div>
+      <div id="panel-cves" class="panel" role="tabpanel">
+        <div id="cve-filters"></div>
+        <div id="cve-list"></div>
+      </div>
+      <div id="panel-zerodays" class="panel" role="tabpanel"></div>
+      <div id="panel-exploits" class="panel" role="tabpanel"></div>
+      <div id="panel-advisories" class="panel" role="tabpanel"></div>
+      <div id="panel-news" class="panel" role="tabpanel"></div>
+      <div id="panel-sources" class="panel" role="tabpanel">
+        <div id="source-status"></div>
+        <div id="statistics" class="stats-section"></div>
+      </div>
+      <div id="panel-detail" class="panel detail-panel hidden" role="tabpanel"></div>
+    </main>
+
+    <footer class="footer">
+      <span id="footer-update">—</span>
+    </footer>
+  </div>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

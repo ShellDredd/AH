@@ -1,0 +1,20 @@
+{
+  "plugins": [
+    {
+      "id": 123456,
+      "name": "Example Product RCE (CVE-2026-12345)",
+      "attributes": {
+        "plugin_name": "Example Product RCE (CVE-2026-12345)",
+        "description": "Remote code execution in Example Product",
+        "cve": "CVE-2026-12345",
+        "cvss3_base_score": "9.8",
+        "vpr_score": "9.5",
+        "epss_score": "0.94",
+        "exploit_available": "true",
+        "solution": "Upgrade to version 2.0 or later",
+        "publication_date": "2026-01-10",
+        "modification_date": "2026-01-12"
+      }
+    }
+  ]
+}

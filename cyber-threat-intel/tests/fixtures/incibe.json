@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0">
+  <channel>
+    <title>INCIBE Vulnerabilidades</title>
+    <item>
+      <title>Vulnerabilidad en Example Product (CVE-2026-12345)</title>
+      <link>https://www.incibe.es/incibe-cert/alerta-temprana/vulnerabilidades/cve-2026-12345</link>
+      <description>Severidad: Crítica. Vulnerabilidad de ejecución remota de código en Example Product. Solución: actualizar a versión 2.0.</description>
+      <pubDate>Mon, 10 Jan 2026 08:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title>Vulnerabilidad en Apache HTTP Server (CVE-2026-67890)</title>
+      <link>https://www.incibe.es/incibe-cert/alerta-temprana/vulnerabilidades/cve-2026-67890</link>
+      <description>Severidad: Alta. Explotación pública detectada. Solución: aplicar parche del fabricante.</description>
+      <pubDate>Wed, 12 Jan 2026 10:00:00 GMT</pubDate>
+    </item>
+  </channel>
+</rss>

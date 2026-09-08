@@ -1,0 +1,53 @@
+{
+  "manifest_version": 3,
+  "name": "Belerofonte Intelligence",
+  "version": "1.0.0",
+  "description": "Local-first vulnerability intelligence aggregator for cybersecurity labs. Collects, normalizes and correlates data from NVD, INCIBE-CERT, Tenable and Exploit-DB.",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "maritrini@local.lab",
+      "strict_min_version": "109.0"
+    }
+  },
+  "permissions": [
+    "storage",
+    "alarms",
+    "notifications"
+  ],
+  "host_permissions": [
+    "https://services.nvd.nist.gov/*",
+    "https://www.incibe.es/*",
+    "https://www.incibe-cert.es/*",
+    "https://gitlab.com/*",
+    "https://cloud.tenable.com/*"
+  ],
+  "optional_host_permissions": [
+    "https://*/*"
+  ],
+  "background": {
+    "scripts": ["background/background.js"],
+    "type": "module"
+  },
+  "action": {
+    "default_popup": "popup/popup.html",
+    "default_icon": {
+      "16": "icons/icon-16.png",
+      "32": "icons/icon-32.png",
+      "48": "icons/icon-48.png"
+    },
+    "default_title": "Cyber Threat Intelligence"
+  },
+  "options_ui": {
+    "page": "options/options.html",
+    "open_in_tab": true
+  },
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "content_security_policy": {
+    "extension_pages": "script-src 'self'; object-src 'self'; connect-src 'self' https://services.nvd.nist.gov https://www.incibe.es https://www.incibe-cert.es https://gitlab.com https://cloud.tenable.com https://*; style-src 'self'; img-src 'self' data:;"
+  }
+}
