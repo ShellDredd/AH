@@ -1,5 +1,5 @@
 # Beleronfonte Tool's Pack — VTI Firefox Extension
-!assets/BELEROFONTE.jpg
+!(./assets/./BELEROFONTE.jpg)
 
 Copyright © 2026 ShellDredd
 Original concept, architecture and technical direction by ShellDredd.
