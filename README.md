@@ -1,5 +1,4 @@
 # Beleronfonte Tool's Pack — VTI Firefox Extension
-# Alias: C4ff33 Add-on
 
 Copyright © 2026 ShellDredd
 Original concept, architecture and technical direction by ShellDredd.
