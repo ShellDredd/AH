@@ -1,4 +1,5 @@
-# Cyber Threat Intelligence — Firefox Extension
+# Beleronfonte Tool's Pack — VTI Firefox Extension - Alias: C4ff33 Add-on
+Autor: ShellDredd
 
 Local-first vulnerability intelligence aggregator for cybersecurity laboratories.
 Collects, normalizes, correlates and visualizes threat data from multiple public sources.
