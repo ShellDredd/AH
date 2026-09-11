@@ -1,8 +1,8 @@
 # Beleronfonte Tool's Pack — VTI Firefox Extension
 # Alias: C4ff33 Add-on
 
-Copyright © 2026 TU_NOMBRE / TU_ALIAS
-Original concept, architecture and technical direction by TU_NOMBRE / TU_ALIAS.
+Copyright © 2026 ShellDredd
+Original concept, architecture and technical direction by ShellDredd.
 Software implementation developed with AI-assisted programming tools under the author's direction, review and engineering supervision.
 Licensed under GNU GPL-3.0-or-later,
 
