@@ -22,6 +22,8 @@ Collects, normalizes, correlates and visualizes threat data from multiple public
 - **Configurable updates**: Manual or scheduled (15m – 24h)
 - **Notifications**: Critical CVEs, known exploited, zero-day indicators, new exploits
 
+![Captura de pantalla](assets/4.png)
+
 ## Architecture
 
 ```
