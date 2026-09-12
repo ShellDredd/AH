@@ -234,12 +234,12 @@ Prepared architecture for future sources:
 
 ## License
 
-Copyright © 2026 TU_NOMBRE / TU_ALIAS
+Copyright © 2026 ShellDredd
 
 PROJECT ATTRIBUTION
 
 Original concept, architecture, engineering and technical direction:
-TU_NOMBRE / TU_ALIAS
+ShellDredd
 
 SOFTWARE DEVELOPMENT
 
