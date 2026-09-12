@@ -307,3 +307,7 @@ Educational / laboratory use. Respect source terms of service and rate limits.
 This tool provides vulnerability intelligence for defensive security research.
 It does not facilitate exploitation. Exploit-DB links are references only.
 Zero-day indicators are evidence-based inferences, not confirmed attributions.
+
+## Screenshot's
+![Captura de pantalla](assets/6.png)
+![Captura de pantalla](assets/8.png)
